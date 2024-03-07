@@ -166,6 +166,7 @@ namespace Name
             {
                    Console.WriteLine("Not pass");
             }
+            Console.WriteLine("- - - - - ternary operator - - - - - ");
             
         }
     }
