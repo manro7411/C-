@@ -105,6 +105,56 @@ namespace Name
             Console.WriteLine(fist);
             float t1 = (float)fist;
             Console.WriteLine(t1);
+
+            // assignment 1
+            double weight,height;
+            Console.WriteLine("Please insert your weight");
+            double.TryParse(Console.ReadLine(),out weight);
+            Console.WriteLine("Please insert your height");
+            double.TryParse(Console.ReadLine(),out height);
+            // bmi = weight/height^2
+            height/=100;
+            double bmi = weight/ Math.Pow(height,2);
+            Console.WriteLine("BMI = {0:F2}",bmi);
+
+            int score = 80;
+            
+            if (score >= 80)
+            {
+                Console.WriteLine("Grade A");
+            }else if (score >=70 && score <=79)
+            {
+                Console.WriteLine("Grade B");
+                
+            }
+            else if (score >=60 && score <=69)
+            {
+                Console.WriteLine("Grade C");
+                
+            }
+            else if (score >=50 && score <=59)
+            {
+                Console.WriteLine("Grade D");
+                
+            }else
+            {
+                Console.WriteLine("Frade F");
+            }
+            int odd_checking = 10;
+            int num_checking;
+            Console.Write("Input number = ");
+            int.TryParse(Console.ReadLine(),out num_checking);
+
+            int.TryParse(Console.ReadLine(),out result);
+
+            if (num_checking%2 == 0)
+            {
+                Console.WriteLine("{0} is Even number",odd_checking);
+            }else
+            {
+                 Console.WriteLine("{0} is Odd number",odd_checking);
+            }
+            
         }
     }
 }
