@@ -188,6 +188,29 @@ namespace Name
             {
                 Console.WriteLine("Not sale !!");
             }
+
+            int sw_1,sw_2,choice,totally;
+            Console.Write("Input number 1 = ");
+            int.TryParse(Console.ReadLine(),out sw_1);
+            Console.Write("Input number 2 = ");
+            int.TryParse(Console.ReadLine(),out sw_2);
+            Console.Write("Input choice(1(+),2(-)) = ");
+            int.TryParse(Console.ReadLine(),out choice);
+
+            switch (choice)
+            {
+                case 1 :
+                totally = sw_1+sw_2;
+                Console.WriteLine(totally);
+                break;
+                case 2 :
+                totally = sw_1-sw_2;
+                Console.WriteLine(totally);
+                break;
+                default:Console.WriteLine("error");
+                break;
+            }
+            
             
         }
     }
