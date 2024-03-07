@@ -117,7 +117,10 @@ namespace Name
             double bmi = weight/ Math.Pow(height,2);
             Console.WriteLine("BMI = {0:F2}",bmi);
 
-            int score = 80;
+            Console.WriteLine("Please insert your score : ");
+
+            int score;
+            int.TryParse(Console.ReadLine(),out score);
             
             if (score >= 80)
             {
@@ -144,8 +147,6 @@ namespace Name
             int num_checking;
             Console.Write("Input number = ");
             int.TryParse(Console.ReadLine(),out num_checking);
-
-            int.TryParse(Console.ReadLine(),out result);
 
             if (num_checking%2 == 0)
             {
