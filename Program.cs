@@ -36,6 +36,8 @@
             float testing_number = 12.45f;
 
             int first = 10;int second = 20;
+            Console.WriteLine(first == second);
+        
             Console.WriteLine("Result = {0}",first+second);
             if (first <= second)
             {
