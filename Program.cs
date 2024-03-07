@@ -51,6 +51,15 @@
             Console.WriteLine("Round = {0}",Math.Round(testing_number));
             Console.WriteLine("Power = {0}",Math.Pow(5,2));
             Console.WriteLine("Square Root = {0}",Math.Sqrt(25));
+
+            Console.WriteLine("Original number = {0}",first);
+            Console.WriteLine("Posfix result = {0}",first++);
+            Console.WriteLine("final result = {0}",first);
+
+            Console.WriteLine("Original number_1 = {0}",first);
+            Console.WriteLine("Posfix result = {0}",first--);
+            Console.WriteLine("final result_1 = {0}",first);
+
         }
     }
 }
