@@ -1,5 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-namespace Name
+﻿namespace Name
 {   
     class Program 
     {
@@ -33,10 +32,8 @@ namespace Name
             Console.WriteLine("Number : {0:N}",num1);
             Console.WriteLine("Number : {0:P}",num1);
             Console.WriteLine("Number : {0:X}",num1);
-            Console.Write("Input = ");
 
-            int result_1 = Console.Read();
-            Console.WriteLine(result_1);
+            float testing_number = 12.45f;
 
             int first = 10;int second = 20;
             Console.WriteLine("Result = {0}",first+second);
@@ -46,10 +43,12 @@ namespace Name
             }else{
                 Console.WriteLine("Something went wrong !");
             }
+            Console.WriteLine("Abs = {0}",Math.Abs(testing_number));
+            Console.WriteLine("Ceiling = {0}",Math.Ceiling(testing_number));
+            Console.WriteLine("Floor = {0}",Math.Floor(testing_number));
+            Console.WriteLine("Round = {0}",Math.Round(testing_number));
+            Console.WriteLine("Power = {0}",Math.Pow(5,2));
 
-
-
-            
         }
     }
 }
