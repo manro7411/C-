@@ -72,6 +72,7 @@ namespace Name
                 Console.WriteLine("Hello world_2");
                 break;
             }
+             Console.WriteLine("- - - - - Convert - - - - -");
             string mystring = "120";
             Console.WriteLine("string = {0}",mystring);
             byte mybyte = (byte)Convert.ToSByte(mystring);
@@ -86,6 +87,14 @@ namespace Name
             Console.WriteLine("Long = {0}",mylong+250);
             Console.WriteLine("float = {0}",myfloat+20);
             Console.WriteLine("double = {0}",mydouble+230);
+            Console.WriteLine("- - - - - Parse - - - - -");
+            byte _byte = byte.Parse(mystring);
+            Console.WriteLine("byte = {0}",_byte+100);
+            short _short = short.Parse(mystring);
+            Console.WriteLine("short = {0}",_short+120);
+            int _int = int.Parse(mystring);
+            Console.WriteLine("int = {0}",_int+10);
+
 
         }
     }
