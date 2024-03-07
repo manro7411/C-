@@ -1,4 +1,6 @@
-﻿namespace Name
+﻿using System.Net.Sockets;
+
+namespace Name
 {   
     class Program 
     {
@@ -60,16 +62,31 @@
             Console.WriteLine(first);
             float calculator = 5+8*9;
             Console.WriteLine(calculator);
-            switch (first = 1)
+            switch (first = 2)
             {
                 case 1:
                 Console.WriteLine("Hello world");
                 break;
-                
+
                  case 2:
-                Console.WriteLine("Hello world");
+                Console.WriteLine("Hello world_2");
                 break;
             }
+            string mystring = "120";
+            Console.WriteLine("string = {0}",mystring);
+            byte mybyte = (byte)Convert.ToSByte(mystring);
+            short myshort = Convert.ToInt16(mystring);
+            int myInt = Convert.ToInt32(mystring);
+            long mylong = Convert.ToInt64(mystring);
+            float myfloat = Convert.ToSingle(mystring);
+            double mydouble = Convert.ToDouble(mystring);
+            Console.WriteLine("byte = {0}",mybyte+120);
+            Console.WriteLine("short = {0}",myshort+20);
+            Console.WriteLine("Int = {0}",myInt+200);
+            Console.WriteLine("Long = {0}",mylong+250);
+            Console.WriteLine("float = {0}",myfloat+20);
+            Console.WriteLine("double = {0}",mydouble+230);
+
         }
     }
 }
