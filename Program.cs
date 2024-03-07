@@ -155,6 +155,15 @@ namespace Name
             {
                  Console.WriteLine("{0} is Odd number",odd_checking);
             }
+            String gender = "male";
+            int heights = 160;
+            if (gender == "male" && heights>= 160)
+            {
+                   Console.WriteLine("Pass");
+            }else
+            {
+                   Console.WriteLine("Not pass");
+            }
             
         }
     }
