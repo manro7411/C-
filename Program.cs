@@ -120,29 +120,31 @@ namespace Name
             Console.WriteLine("Please insert your score : ");
 
             int score;
+            string grade;
             int.TryParse(Console.ReadLine(),out score);
             
             if (score >= 80)
             {
-                Console.WriteLine("Grade A");
+                grade = "Grade A";
             }else if (score >=70 && score <=79)
             {
-                Console.WriteLine("Grade B");
+                  grade = "Grade B";
                 
             }
             else if (score >=60 && score <=69)
             {
-                Console.WriteLine("Grade C");
+                  grade = "Grade C";
                 
             }
             else if (score >=50 && score <=59)
             {
-                Console.WriteLine("Grade D");
+                  grade = "Grade D";
                 
             }else
             {
-                Console.WriteLine("Frade F");
+                 grade = "Grade F";
             }
+            Console.WriteLine("Grade = {0} , Score = {1}",grade,score);
             int odd_checking = 10;
             int num_checking;
             Console.Write("Input number = ");
