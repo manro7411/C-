@@ -59,6 +59,9 @@
             Console.WriteLine("Original number_1 = {0}",first);
             Console.WriteLine("Posfix result = {0}",first--);
             Console.WriteLine("final result_1 = {0}",first);
+            first = first + second; // first += second
+            Console.WriteLine(first);
+            
 
         }
     }
