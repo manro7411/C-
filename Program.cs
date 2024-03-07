@@ -166,7 +166,28 @@ namespace Name
             {
                    Console.WriteLine("Not pass");
             }
-            Console.WriteLine("- - - - - ternary operator - - - - - ");
+            // Console.WriteLine("- - - - - ternary operator - - - - - ");
+            // result = (score >= 50) ? "Pass": "Not pass";
+            int money = 30000;
+            if (money >= 15000)
+            {
+                Console.WriteLine(" Sale !! ");
+                if (money == 15000)
+                {
+                    Console.WriteLine("10% discount");
+                }else if (money == 20000)
+                {
+                    Console.WriteLine("20% discount");
+                    
+                }else if (money == 30000)
+                {
+                    Console.WriteLine("30% discount");
+                    
+                }
+            }else
+            {
+                Console.WriteLine("Not sale !!");
+            }
             
         }
     }
