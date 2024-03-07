@@ -1,5 +1,4 @@
 ﻿using System.Net.Sockets;
-
 namespace Name
 {   
     class Program 
@@ -95,7 +94,17 @@ namespace Name
             int _int = int.Parse(mystring);
             Console.WriteLine("int = {0}",_int+10);
 
+            String mt = "125.5";
+            int resuotmyint;
+            bool success = int.TryParse(mt,out resuotmyint);
+            Console.WriteLine("Tryparse = {0}",success);
 
+            // narrowing casting
+            double fist = 100.15;
+            int sed = (int)first;
+            Console.WriteLine(fist);
+            float t1 = (float)fist;
+            Console.WriteLine(t1);
         }
     }
 }
