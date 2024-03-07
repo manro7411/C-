@@ -1,4 +1,5 @@
 ﻿using System.Net.Sockets;
+using System.Reflection.Metadata;
 namespace Name
 {   
     class Program 
@@ -219,6 +220,11 @@ namespace Name
                 Console.WriteLine("{0} x {1} = {2}",result_final,count,result_final*count);
                 count++;        
             }
+            do
+            {
+                Console.WriteLine("Hello world");
+                count++;   
+            } while (count >= 3);
             
             
         }
