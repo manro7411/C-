@@ -48,7 +48,7 @@
             Console.WriteLine("Floor = {0}",Math.Floor(testing_number));
             Console.WriteLine("Round = {0}",Math.Round(testing_number));
             Console.WriteLine("Power = {0}",Math.Pow(5,2));
-
+            Console.WriteLine("Square Root = {0}",Math.Sqrt(25));
         }
     }
 }
