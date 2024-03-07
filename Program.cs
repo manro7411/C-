@@ -1,6 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 namespace Name
-{
+{   
     class Program 
     {
         static void Main(string[] args){
@@ -24,9 +24,16 @@ namespace Name
             double number2 = 11.5;
             Console.WriteLine("Result Double :"+number1+number2);
             Console.WriteLine(string.Compare(name,hello));
+            const float PI = 3.14f; // Constant variable
+            int num1 = 1234567;
+            Console.WriteLine("Number = {0}",num1); // normal
+            Console.WriteLine("Number : {0:E}",num1);
+            Console.WriteLine("Number : {0:F4}",num1);
+            Console.WriteLine("Number : {0:G}",num1);
+            Console.WriteLine("Number : {0:N}",num1);
+            Console.WriteLine("Number : {0:P}",num1);
+            Console.WriteLine("Number : {0:X}",num1);
 
-            const float PI = 3.14f; // Constant variable 
-            Console.ReadKey();
             
         }
     }
