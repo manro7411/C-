@@ -38,6 +38,17 @@ namespace Name
             int result_1 = Console.Read();
             Console.WriteLine(result_1);
 
+            int first = 10;int second = 20;
+            Console.WriteLine("Result = {0}",first+second);
+            if (first <= second)
+            {
+                Console.WriteLine("The result is true !");
+            }else{
+                Console.WriteLine("Something went wrong !");
+            }
+
+
+
             
         }
     }
