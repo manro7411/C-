@@ -222,9 +222,9 @@ namespace Name
             }
             do
             {
-                Console.WriteLine("Hello world");
+                Console.WriteLine("Hello world = {0}",count);
                 count++;   
-            } while (count >= 3);
+            } while (count <= 3);
             
             
         }
