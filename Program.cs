@@ -32,12 +32,9 @@
             Console.WriteLine("Number : {0:N}",num1);
             Console.WriteLine("Number : {0:P}",num1);
             Console.WriteLine("Number : {0:X}",num1);
-
             float testing_number = 12.45f;
-
             int first = 10;int second = 20;
             Console.WriteLine(first == second);
-        
             Console.WriteLine("Result = {0}",first+second);
             if (first <= second)
             {
@@ -61,8 +58,18 @@
             Console.WriteLine("final result_1 = {0}",first);
             first = first + second; // first += second
             Console.WriteLine(first);
-            
-
+            float calculator = 5+8*9;
+            Console.WriteLine(calculator);
+            switch (first = 1)
+            {
+                case 1:
+                Console.WriteLine("Hello world");
+                break;
+                
+                 case 2:
+                Console.WriteLine("Hello world");
+                break;
+            }
         }
     }
 }
