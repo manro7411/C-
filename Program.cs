@@ -33,6 +33,10 @@ namespace Name
             Console.WriteLine("Number : {0:N}",num1);
             Console.WriteLine("Number : {0:P}",num1);
             Console.WriteLine("Number : {0:X}",num1);
+            Console.Write("Input = ");
+
+            int result_1 = Console.Read();
+            Console.WriteLine(result_1);
 
             
         }
