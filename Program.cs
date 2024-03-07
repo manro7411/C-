@@ -224,9 +224,19 @@ namespace Name
             {
                 Console.WriteLine("Hello world = {0}",count);
                 count++;   
-            } while (count <= 3);
-            
-            
+            } while (count <= 3);   
+            int sum =0,avg = 0;
+            for (int i = 1; i <= 5; i++)
+            {
+                int num;
+                Console.Write("Input number = ");
+                int.TryParse(Console.ReadLine(),out num);
+                sum+=num;
+            }
+            Console.WriteLine("Summation = {0}",sum);
+            avg = sum/5;
+            Console.WriteLine("Average = {0}",avg);
+
         }
     }
 }
