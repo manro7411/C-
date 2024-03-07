@@ -1,0 +1,14 @@
+/Users/sleanz/Desktop/C#_Tutorials/bin/Debug/net8.0/C#_Tutorials
+/Users/sleanz/Desktop/C#_Tutorials/bin/Debug/net8.0/C#_Tutorials.deps.json
+/Users/sleanz/Desktop/C#_Tutorials/bin/Debug/net8.0/C#_Tutorials.runtimeconfig.json
+/Users/sleanz/Desktop/C#_Tutorials/bin/Debug/net8.0/C#_Tutorials.dll
+/Users/sleanz/Desktop/C#_Tutorials/bin/Debug/net8.0/C#_Tutorials.pdb
+/Users/sleanz/Desktop/C#_Tutorials/obj/Debug/net8.0/C#_Tutorials.GeneratedMSBuildEditorConfig.editorconfig
+/Users/sleanz/Desktop/C#_Tutorials/obj/Debug/net8.0/C#_Tutorials.AssemblyInfoInputs.cache
+/Users/sleanz/Desktop/C#_Tutorials/obj/Debug/net8.0/C#_Tutorials.AssemblyInfo.cs
+/Users/sleanz/Desktop/C#_Tutorials/obj/Debug/net8.0/C#_Tutorials.csproj.CoreCompileInputs.cache
+/Users/sleanz/Desktop/C#_Tutorials/obj/Debug/net8.0/C#_Tutorials.dll
+/Users/sleanz/Desktop/C#_Tutorials/obj/Debug/net8.0/refint/C#_Tutorials.dll
+/Users/sleanz/Desktop/C#_Tutorials/obj/Debug/net8.0/C#_Tutorials.pdb
+/Users/sleanz/Desktop/C#_Tutorials/obj/Debug/net8.0/C#_Tutorials.genruntimeconfig.cache
+/Users/sleanz/Desktop/C#_Tutorials/obj/Debug/net8.0/ref/C#_Tutorials.dll
