@@ -210,6 +210,15 @@ namespace Name
                 default:Console.WriteLine("error");
                 break;
             }
+            int count = 1;
+            Console.Write("Insert your number :");
+            int result_final;
+            int.TryParse(Console.ReadLine(),out result_final);
+            while (count <= 10)
+            {
+                Console.WriteLine("{0} x {1} = {2}",result_final,count,result_final*count);
+                count++;        
+            }
             
             
         }
