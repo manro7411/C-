@@ -2,10 +2,39 @@
 using System.Reflection.Metadata;
 namespace Name
 {   
+    struct Employee{
+        public string namea;
+        public int age;
+        public double salary;
+        public string department;
+
+        public void setEmployee(string nameVal,int ageval,double salaryval,string departmentval)
+        {
+            namea = nameVal;
+            age = ageval;
+            salary = salaryval;
+            department = departmentval;
+        }
+        public void showEmployee(){
+            Console.WriteLine("Name : "+namea);
+            Console.WriteLine("Age : "+age);
+            Console.WriteLine("Salary : "+salary);
+            Console.WriteLine("Department : "+department);
+        }
+        
+    }
     class Program 
     {
+        // structure
+        
         int num = 200; // global variable
         static void Main(string[] args){
+            Employee emp1 = new Employee(); // in case to declare method
+            emp1.setEmployee("Ratchanon Traitiprat",30,90000.00,"Programmer");
+            emp1.namea = "Ratchanon Traitiprat";
+            emp1.age = 30;
+            Console.WriteLine("Name = "+emp1.namea);
+
             string name = "Ratchanon Traitiprat\n";
             string hello = "Hello world";
             Console.WriteLine("Jamk University of Applied Science");
