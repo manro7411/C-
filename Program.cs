@@ -237,6 +237,218 @@ namespace Name
             avg = sum/5;
             Console.WriteLine("Average = {0}",avg);
 
+            // while (true)
+            // {
+            //       int num;
+            //     Console.Write("Input number = ");
+            //     int.TryParse(Console.ReadLine(),out num);
+            //     if (num<0)
+            //     {
+            //         break;
+            //     }
+            //     sum+=num;   
+            // }
+            Console.WriteLine("Summation = {0}",sum);
+            avg = sum/5;
+            Console.WriteLine("Average = {0}",avg);
+
+            int max =0; int min=int.MaxValue;
+            // while (ns == 5)
+            // {
+            //     int n;
+            //     Console.WriteLine("Input number = ");
+            //     int.TryParse(Console.ReadLine(),out n);
+            //     if (n>max)
+            //     {
+            //         max =n;  
+            //     }if (n<min)
+            //     {
+            //         min = n;
+            //     }
+            // }
+            Console.WriteLine("max = {0}",max);
+             Console.WriteLine("min = {0}",min);
+
+            Console.WriteLine("- - - - - Arrays - - - - -");
+            int []number ={1,2,3,4,5,6};
+            int []arr = new int[10]; 
+            number[0] = 3000;
+            Console.WriteLine("Number index : {0}",number[0]);
+            double []grades = {4.00,3.50,3.00,2.00};
+            Console.WriteLine("Number index : {0}",grades[0]);
+            Console.WriteLine("Number index : {0}",grades.Length);
+            for (int i = 0; i < grades.Length; i++)
+            {
+             Console.WriteLine("Number index {0} = {1}",i,grades[i]);    
+            }
+            foreach (var item in grades)
+            {
+                Console.WriteLine("Number index : {0}",item);
+                
+            }
+            // Arrays 2D
+            string[,] arr2d = new string[2,2]{
+                {"a","b"},
+                {"c","d"}
+            };
+            arr2d[0,0]="Ratchanon";
+            Console.WriteLine("Number index : {0}",arr2d[0,0]);
+            Console.WriteLine("Array row : {0}",arr2d.GetLength(0));
+            for (int row = 0;row < arr2d.GetLength(0); row++)
+            {
+                for (int col = 0; col < arr2d.GetLength(1); col++)
+                {
+                    Console.WriteLine(arr2d[row,col]);
+                }
+            }
+            foreach (var item in arr2d)
+            {
+                Console.WriteLine(item);
+            }
+            // Jagged Arrays 
+            string[][] jaggedarr ={
+            new string[] {"1","2","3"}, // 3 cols 
+            new string[]{"2","3"},
+            new string[]{"2","3"}
+            }; // crating array -> 3 row 
+            jaggedarr[0][0] = "Ratchanon";
+            Console.WriteLine(jaggedarr[0][1]);
+
+            for (int i = 0; i < jaggedarr.Length; i++)
+            {
+                Console.WriteLine("Row = {0}",i);
+                for (int j = 0; j < jaggedarr[i].Length; j++)
+                {
+                    Console.WriteLine("Student jaggedar Arrays [{0},{1} = {2}]",i,j,jaggedarr[i][j]);
+                }
+                Console.WriteLine("########");        
+            }
+            //methond -> predifined method => automatic function && user-defined-method = was created bt my own
+            SayHi();
+            Hello("Ratchanon Traitiprat");
+            Showdata("Ratchanon","Traitiprat","Thailand");
+            callculator(5,10);
+            string myIP = getIPaddress();
+            Console.WriteLine("MY IP : {0}",myIP);
+            Console.WriteLine("{0}",checknumber());
+            Console.WriteLine("{0}",ttest(5,10));
+            ttt(100,200);
+            int[] scres = {10,20,30,40,50,60,70,80};
+            int[] scresPhysic = {80,90,100,200,300};
+            for (int i = 0; i < scres.Length; i++)
+            {
+                Console.WriteLine(scres[i]);
+            }
+            for (int i = 0; i < scresPhysic.Length; i++)
+            {
+                Console.WriteLine(scresPhysic[i]);
+            }
+            Console.WriteLine("----------");
+            displayscore(scres);
+            Console.WriteLine("----------");
+            int maxx = findmaxarray(scresPhysic);
+            Console.WriteLine("Max score = "+maxx);
+             int minn = findminarray(scresPhysic);
+            Console.WriteLine("Min score = "+minn);
+            int[] cloneScore = copyArr(scres);
+            for (int i = 0; i < cloneScore.Length; i++)
+            {
+                Console.WriteLine("Clone score = "+cloneScore[i]);  
+            }
+            cocacola("Ratchanon Traitiprat",20000,"Bangkok");
+            cocacola("Tunwarat",20000);
+ 
+        }
+        //declare method input yype
+        static void SayHi(){
+            Console.WriteLine("Hello c#");
+        }
+        static void Hello(string name){
+              Console.WriteLine("Hello {0}",name);
+        }
+        static void Showdata(string name,string lname,string address){
+            Console.WriteLine(name);
+            Console.WriteLine(lname);
+            Console.WriteLine(address);
+        }
+        static void callculator(int x,int y){
+            int result = x+y;
+              Console.WriteLine("Result : {0}",result);
+        }
+
+        static void ttt(int x , int y){
+            if (x < 0 || y < 0)
+            {
+                return;
+            }
+            int summation = x + y;
+            Console.WriteLine("Sum = {0}",summation);
+        }
+        //return method
+        static string getIPaddress(){
+            return "127.0.0.1";
+        }
+        static bool checknumber(){
+            int nn= 50;
+            if (nn % 2 == 0)
+            {
+                return true;
+                
+            }
+            else
+            {
+                return false;
+            }
+
+        }
+        static int ttest(int x,int y){
+            return x + y;
+        }
+        static void displayscore(int []arr )
+        {
+            for (int i = 0; i < arr.Length; i++)
+            {
+                Console.WriteLine(arr[i]);
+            }
+        }
+        static int findmaxarray(int[] arr)
+        {   
+            // arr = 10,20,30,40
+            int maxValue = arr[0];
+            for (int i = 0; i < arr.Length; i++)
+            {
+                // comparision
+                if (arr[i]>maxValue) //20>10
+                {
+                    maxValue = arr[i]; //20
+                }
+            }
+            return maxValue;
+        }
+          static int findminarray(int[] arr)
+        {   
+            // arr = 10,20,30,40
+            int minValue = arr[0];
+            for (int i = 0; i < arr.Length; i++)
+            {
+                // comparision
+                if (arr[i]<minValue) 
+                {
+                    minValue = arr[i]; 
+                }
+            }
+            return minValue;
+        }
+        static int[] copyArr(int[] oriArr){
+            int [] newArr = new int[oriArr.Length];
+            for (int i = 0; i < oriArr.Length; i++)
+            {
+                newArr[i] = oriArr[i];
+            }
+            return newArr;
+        }
+        static void cocacola(string name,double salary,string address="Bangkok"){
+            Console.WriteLine("Name : {0} Salary : {1} Address :{2}",name,salary,address);
         }
     }
 }
