@@ -25,10 +25,34 @@ namespace Name
     }
     class Program 
     {
-        // structure
+        enum Rating
+        {
+            Verybad,
+            Bad,
+            Good,
+            Grate,
+            Excellent
+            
+        }
         
         int num = 200; // global variable
         static void Main(string[] args){
+            try
+            {
+                Console.Write("Input number :");
+                string input = Console.ReadLine();
+                int numberd = int.Parse(input) *10;
+                Console.WriteLine(numberd);
+            }
+            catch (FormatException)
+            {
+                Console.WriteLine("Ivalid Format , Only number");
+                throw;
+            }
+            Console.WriteLine((int)Rating.Verybad);
+            Employee[] emp = new Employee[3];
+            emp[0].setEmployee("Ratchanon Traitiprat",40,20000.00,"Software engineer");
+            emp[0].showEmployee();
             Employee emp1 = new Employee(); // in case to declare method
             emp1.setEmployee("Ratchanon Traitiprat",30,90000.00,"Programmer");
             emp1.namea = "Ratchanon Traitiprat";
