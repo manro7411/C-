@@ -4,6 +4,7 @@ namespace Name
 {   
     class Program 
     {
+        int num = 200; // global variable
         static void Main(string[] args){
             string name = "Ratchanon Traitiprat\n";
             string hello = "Hello world";
@@ -357,6 +358,7 @@ namespace Name
             }
             cocacola("Ratchanon Traitiprat",20000,"Bangkok");
             cocacola("Tunwarat",20000);
+            double balance = 10000; // local variable 
  
         }
         //declare method input yype
